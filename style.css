@@ -22,11 +22,12 @@ body {
     line-height: 1.6;
 }
 
+
 /* ==================== HEADER ==================== */
 .header {
     background: linear-gradient(135deg, var(--vino-tinto) 0%, var(--vino-oscuro) 100%);
     color: var(--blanco);
-    padding: 30px 20px;
+    padding: 20px 20px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     position: sticky;
@@ -35,8 +36,8 @@ body {
 }
 
 .logo {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
     animation: pulse 2s infinite;
 }
 
@@ -618,4 +619,5 @@ body {
     .modal-body {
         padding: 25px;
     }
+
 }
