@@ -1,4 +1,3 @@
-
 // ==================== OCULTAR/MOSTRAR HEADER AL HACER SCROLL ====================
 let lastScrollTop = 0;
 const header = document.querySelector('.header');
@@ -544,5 +543,6 @@ window.addEventListener('load', function() {
 console.log('🥩 Menú Digital Meat House Cabeza y Cola - Cargado exitosamente');
 console.log('📱 Teléfono: 310 428 8493');
 console.log('✨ Desarrollado con amor para la mejor experiencia gastronómica');
+
 
 
