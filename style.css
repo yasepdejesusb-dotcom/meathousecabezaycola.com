@@ -98,17 +98,19 @@ body {
     font-size: 20px;
 }
 
-/* ==================== NAVEGACIÓN ==================== */
 .nav-categories {
     background: linear-gradient(to right, var(--negro), var(--vino-oscuro));
-    padding: 15px 0;
+    padding: 12px 0;
     overflow-x: auto;
     white-space: nowrap;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     -webkit-overflow-scrolling: touch;
-    position: sticky;
-    top: 215px;
+    position: fixed;
+    top: 175px;  /* CAMBIA ESTE VALOR - era 175px */
+    left: 0;
+    right: 0;
     z-index: 99;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-categories::-webkit-scrollbar {
@@ -618,4 +620,5 @@ body {
     .modal-body {
         padding: 25px;
     }
+
 }
