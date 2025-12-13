@@ -78,7 +78,7 @@ body {
 .header {
     background: linear-gradient(135deg, var(--vino-tinto) 0%, var(--vino-oscuro) 100%);
     color: var(--blanco);
-    padding: 10px 10px 10PX 10PX;
+    padding: 10px 10px 10px 10px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -598,6 +598,7 @@ body {
     }
 
 }
+
 
 
 
