@@ -1,3 +1,34 @@
+
+// ==================== OCULTAR/MOSTRAR HEADER AL HACER SCROLL ====================
+let lastScrollTop = 0;
+const header = document.querySelector('.header');
+const navCategories = document.querySelector('.nav-categories');
+const delta = 5;
+const headerHeight = 215; // Altura aproximada del header
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // No hacer nada si el scroll es muy pequeño
+    if (Math.abs(lastScrollTop - scrollTop) <= delta) {
+        return;
+    }
+    
+    if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
+        // Scroll hacia abajo - ocultar
+        header.classList.add('hide');
+        navCategories.classList.add('hide');
+    } else {
+        // Scroll hacia arriba - mostrar
+        header.classList.remove('hide');
+        navCategories.classList.remove('hide');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+
+
 // ==================== BUSCADOR AVANZADO ====================
 document.getElementById('searchInput').addEventListener('input', function(e) {
     const searchTerm = e.target.value.toLowerCase().trim();
@@ -513,4 +544,5 @@ window.addEventListener('load', function() {
 console.log('🥩 Menú Digital Meat House Cabeza y Cola - Cargado exitosamente');
 console.log('📱 Teléfono: 310 428 8493');
 console.log('✨ Desarrollado con amor para la mejor experiencia gastronómica');
+
 
