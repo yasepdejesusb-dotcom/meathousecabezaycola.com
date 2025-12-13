@@ -74,8 +74,6 @@ body {
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
 
-
-
 /* ==================== HEADER ==================== */
 .header {
     background: linear-gradient(135deg, var(--vino-tinto) 0%, var(--vino-oscuro) 100%);
@@ -600,6 +598,7 @@ body {
     }
 
 }
+
 
 
 
