@@ -100,17 +100,16 @@ body {
     font-size: 20px;
 }
 
-/* ==================== NAVEGACIÓN ==================== */
-.nav-categories {
-    background: linear-gradient(to right, var(--negro), var(--vino-oscuro));
-    padding: 15px 0;
-    overflow-x: auto;
-    white-space: nowrap;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    -webkit-overflow-scrolling: touch;
+/* ==================== HEADER ==================== */
+.header {
+    background: linear-gradient(135deg, var(--vino-tinto) 0%, var(--vino-oscuro) 100%);
+    color: var(--blanco);
+    padding: 10px 10px 10PX 10PX;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     position: sticky;
-    top: 215px;
-    z-index: 99;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-categories::-webkit-scrollbar {
@@ -622,4 +621,5 @@ body {
     }
 
 }
+
 
